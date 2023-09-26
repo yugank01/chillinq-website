@@ -23,3 +23,80 @@
   background: linear-gradient(60deg, #2D0745);
   filter: blur(250px);
 }
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.wrapper::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 16vw 0;
+  transform: scaleX(1.61803);
+}
+
+@media (max-width: 48rem) {
+  .wrapper::before {
+    /* background-image: radial-gradient(circle at bottom left, black, black 16vw, red 16vw, red 17vw, orange 17vw, orange 18vw, yellow 18vw, yellow 19vw, green 19vw, green 20vw, blue 20vw, blue 21vw, purple 21vw, purple 22vw, black 22vw); */
+  }
+}
+
+@media (min-width: 48rem) {
+  .wrapper::before {
+    /* background-image: radial-gradient(circle at bottom left, black, black 10vw, red 10vw, red 11vw, orange 11vw, orange 12vw, yellow 12vw, yellow 13vw, green 13vw, green 14vw, blue 14vw, blue 15vw, purple 15vw, purple 16vw, black 16vw); */
+  }
+}
+
+.content {
+  --text-size: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+  position: relative;
+  /* The + symbol takes up less space even though it's monospace. This helps it look more balanced.
+  Btw: did you notice I love the golden ratio! */
+  left: 1.61803vw;
+  padding: 0;
+  margin: 0;
+  font-family: 'Fira Mono', monospace;
+  font-size: var(--text-size);
+  font-weight: 600;
+  letter-spacing: 0.333ch;
+  background-image: linear-gradient(to right, red, orange,yellow,green,blue,purple);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+    opacity: 0.5; 
+
+  
+}
+
+/* These are non-standard but well-supported so best to use with `@supports` (if you really want to use them) */
+@supports (text-stroke: 0.1em transparent) {
+  .content {
+    /* I could have used `@supports not` but isn't supported by all browsers... So we're overriding color + font-weight here for best support */
+    color: initial;
+    font-weight: 500;
+    text-stroke: 0.1em transparent
+  }
+}
+
+@supports (-webkit-text-stroke: 0.1em transparent) {
+  .content {
+    color: initial;
+    font-weight: 500;
+    -webkit-text-stroke: 0.1em transparent
+  }
+}
+
+.faq{
+  width: 60%;
+}
