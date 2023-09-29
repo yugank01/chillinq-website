@@ -9,9 +9,13 @@ import styles from "@/style";
 import Showcase from "./ components/Showcase";
 import Video1 from "./ components/Video1";
 import Video2 from "./ components/Video2";
+import Trailer from "./ components/Trailer";
+import Social from "./ components/Social";
+import Slider from "./ components/Slider";
+import Social2 from "./ components/Social2";
 export default function Home() {
   return (
-    <div className={`bg-[#020202] h-max`}>
+    <div className={`bg-[#020202] w-fit`}>
       {/* <div> */}
       <Navbar/>
       <Hero/>
@@ -22,7 +26,11 @@ export default function Home() {
       <Features/>
       <Video1/>
       <Showcase/>
-      <Video2/>
+      {/* <Video2/> */}
+      <Trailer/>
+      <Social/>
+      <Slider/>
+      <Social2/>
       <FaqSection/>
       <Footer/>
       {/* </div>

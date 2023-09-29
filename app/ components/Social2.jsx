@@ -1,28 +1,28 @@
 "use client"
 import React, { useRef, useEffect } from 'react';
 
-function Social() {
+function Social2() {
 
     const data = [
         {
           id: 1,
-          img: '/insta1.jpeg',
+          img: '/insta20.png',
         },
         {
           id: 2,
-          img: '/insta4.png',
+          img: '/insta21.png',
         },
         {
           id: 3,
-          img: '/insta7.png'
+          img: '/insta22.png'
         }, 
         {
           id: 4,
-          img: '/insta5.png',
+          img: '/insta23.png',
         },
         {
           id: 5,
-          img: '/insta2.jpeg',
+          img: '/insta24.png',
         },
       ];
 
@@ -80,4 +80,4 @@ function Social() {
   );
 }
 
-export default Social;
+export default Social2;

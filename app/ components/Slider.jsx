@@ -1,50 +1,67 @@
 "use client"
 import React, { useRef, useEffect } from 'react';
 
-function Social() {
-
-    const data = [
+function Slider() {
+    const images = [
         {
           id: 1,
-          img: '/insta1.jpeg',
+          img: '/insta11.png',
         },
         {
           id: 2,
-          img: '/insta4.png',
+          img: '/insta12.png',
         },
         {
           id: 3,
-          img: '/insta7.png'
+          img: '/insta13.png'
         }, 
         {
           id: 4,
-          img: '/insta5.png',
+          img: '/insta14.png',
         },
         {
           id: 5,
-          img: '/insta2.jpeg',
+          img: '/insta15.png',
         },
+        {
+            id: 6,
+            img: '/insta16.png',
+          },
+          {
+            id: 7,
+            img: '/insta17.png',
+          },
+          {
+            id: 8,
+            img: '/insta18.png',
+          },
+          {
+            id: 9,
+            img: '/insta19.png',
+          },     
       ];
 
-      
-      
   const sliderRef = useRef(null);
 
   const slideLeft = () => {
     if (sliderRef.current) {
-      sliderRef.current.scrollLeft -= 20; // Adjust the scroll speed as needed
+      sliderRef.current.scrollLeft -= 10; // Adjust the scroll speed as needed
     }
   };
 
   const slideRight = () => {
     if (sliderRef.current) {
-      sliderRef.current.scrollLeft += 20; // Adjust the scroll speed as needed
+      sliderRef.current.scrollLeft += 5; // Adjust the scroll speed as needed
     }
   };
 
   useEffect(() => {
+    if (sliderRef.current) {
+      sliderRef.current.scrollLeft = sliderRef.current.scrollWidth - sliderRef.current.clientWidth;
+    }
+
     const scrollInterval = setInterval(() => {
-      slideRight(); // Auto-scroll to the right
+      slideLeft(); // Auto-scroll to the left
     }, 500); // Adjust the interval time (milliseconds) as needed
 
     return () => {
@@ -53,31 +70,25 @@ function Social() {
   }, []);
 
   return (
-    <>
     <div>
-    <div className='relative flex items-center p-48'>
+      <div className='relative flex items-center'>
         <div
           ref={sliderRef}
           className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide'
           style={{ scrollBehavior: 'smooth' }}
         >
-          {data.map((item) => (
+          {images.map((item) => (
             <img
               key={item.id}
-              className='w-[400px] inline-block p-4 rounded-lg cursor-pointer hover:scale-105 ease-in-out duration-300 '
+              className='w-[400px] inline-block p-4 rounded-lg cursor-pointer hover:scale-105 ease-in-out duration-300'
               src={item.img}
               alt='/'
             />
           ))}
         </div>
       </div>
-
-
-        
     </div>
-
-    </>
   );
 }
 
-export default Social;
+export default Slider;

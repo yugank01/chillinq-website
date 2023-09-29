@@ -6,7 +6,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Showcase = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const totalSlides = 3; // Adjust this number based on your content
+    const totalSlides = 4; // Adjust this number based on your content
 
 
     useEffect(() => {
@@ -43,6 +43,9 @@ const Showcase = () => {
       </div>
       <div className='w-[50%] h-[50%] mx-auto my-auto'>
         <Image src="/mockup3.svg" height="200" width="200" alt="Slide 3" />
+      </div>
+      <div className='w-[50%] h-[50%] mx-auto my-auto'>
+        <Image src="/mockup4.svg" height="200" width="200" alt="Slide 3" />
       </div>
     </Carousel>
 
