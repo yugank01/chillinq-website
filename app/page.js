@@ -13,6 +13,7 @@ import Trailer from "./ components/Trailer";
 import Social from "./ components/Social";
 import Slider from "./ components/Slider";
 import Social2 from "./ components/Social2";
+import Heading2 from "./ components/Heading2"
 export default function Home() {
   return (
     <div className={`bg-[#020202] w-fit`}>
@@ -28,6 +29,7 @@ export default function Home() {
       <Showcase/>
       {/* <Video2/> */}
       <Trailer/>
+      <Heading2/>
       <Social/>
       <Slider/>
       <Social2/>

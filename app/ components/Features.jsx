@@ -40,7 +40,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
 
 const Features = () =>  (
 
-<section className={`${layout.section}`}>
+<section className={`${layout.section} mb-24`}>
     
 <div className={`${layout.sectionInfo} ml-8 sm:ml-24`}>
 

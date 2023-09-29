@@ -27,7 +27,7 @@
 .wrapper {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,16 +35,16 @@
   
 }
 
-.wrapper::before {
+/* .wrapper::before {
   content: "";
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   transform-origin: 16vw 0;
   transform: scaleX(1.61803);
-}
+} */
 
 @media (max-width: 48rem) {
   .wrapper::before {
@@ -63,18 +63,18 @@
   position: relative;
   /* The + symbol takes up less space even though it's monospace. This helps it look more balanced.
   Btw: did you notice I love the golden ratio! */
-  left: 1.61803vw;
+  /* left: 1.61803vw; */
   padding: 0;
   margin: 0;
   font-family: 'Fira Mono', monospace;
-  font-size: var(--text-size);
+  /* font-size: var(--text-size); */
   font-weight: 600;
   letter-spacing: 0.333ch;
   background-image: linear-gradient(to right, red, orange,yellow,green,blue,purple);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-    opacity: 0.5; 
+    opacity: 0.4; 
 
   
 }
@@ -99,4 +99,9 @@
 
 .faq{
   width: 60%;
+}
+
+.vid-bg {
+  background-image: url('/videobg.svg');
+  width: 85%;
 }
