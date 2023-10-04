@@ -26,7 +26,7 @@ export default function Home() {
       {/* <Heading/> */}
       {/* <Features/> */}
       <Video1/>
-      <Showcase/>
+      {/* <Showcase/> */}
       {/* <Video2/> */}
       <Trailer/>
       {/* <Heading2/> */}
