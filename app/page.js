@@ -18,18 +18,18 @@ export default function Home() {
   return (
     <div className={`bg-[#020202] w-fit`}>
       {/* <div> */}
-      <Navbar/>
-      <Hero/>
+      {/* <Navbar/> */}
+      {/* <Hero/> */}
       {/* <div className={`bg-[#020202] h-max  ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}> */}
 
-      <Heading/>
+      {/* <Heading/> */}
       <Features/>
-      <Video1/>
-      <Showcase/>
+      {/* <Video1/> */}
+      {/* <Showcase/> */}
       {/* <Video2/> */}
-      <Trailer/>
-      <Heading2/>
+      {/* <Trailer/> */}
+      {/* <Heading2/> */}
       {/* <Social/>
       <Slider/>
       <Social2/> */}
