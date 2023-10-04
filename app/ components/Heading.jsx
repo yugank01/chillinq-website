@@ -2,7 +2,7 @@ import React from 'react'
 
 const Heading = () => {
   return (
-    <div className="wrapper flex flex-col p-4">
+    <div className="wrapper flex flex-col">
       <div className="content text-[4rem] md:text-[7.5rem] lg:text-[10rem]">
         FEATURES
       </div>
