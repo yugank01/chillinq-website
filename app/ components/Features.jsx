@@ -60,7 +60,6 @@ experience as smooth and enjoyable as possible.
 {/* <div className={layout.sectionImg}>
 </div> */}
  <div className={`${layout.sectionImg} flex-col`}>
-    <div className="gradient-03"></div>
     <img src="/loop.svg" alt="loop" className="w-[75%] h-[75%]"/>
     </div>
 </section>
