@@ -29,7 +29,7 @@ export default function Home() {
       <Showcase/>
       {/* <Video2/> */}
       <Trailer/>
-      {/* <Heading2/> */}
+      <Heading2/>
       <Social/>
       <Slider/>
       <Social2/>
