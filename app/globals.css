@@ -24,6 +24,14 @@
   filter: blur(250px);
 }
 
+.gradient-03{
+  position: absolute;
+    width: 330px;
+    height: 850.06px;
+    background: #2D0745;
+    filter: blur(250px);
+}
+
 .wrapper {
   position: relative;
   width: 100%;
