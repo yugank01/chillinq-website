@@ -2,11 +2,11 @@ import React from 'react'
 
 const Heading = () => {
   return (
-    <div className="wrapper flex flex-col">
-      <div className="content text-[10rem] ">
+    <div className="wrapper flex flex-col p-4">
+      <div className="content text-[7.5rem] sm:text-[10rem] ">
         FEATURES
       </div>
-      <div className='absolute text-white font-semibold text-center text-[5rem]'>
+      <div className='absolute text-white font-semibold text-center text-[4.5rem] sm:text-[5rem]'>
         FEATURES
       </div>
     </div>

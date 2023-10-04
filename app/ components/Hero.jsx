@@ -55,7 +55,7 @@ function Hero() {
   }, [currentIndex]);
 
   return (
-    <div className="max-w-[1500px] h-[780px] w-full relative group">
+    <div className="max-w-[1500px] h-[410px] sm:h-[545px] lg:h-[595px] xl:h-[780px] w-full relative group">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
