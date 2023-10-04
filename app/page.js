@@ -24,7 +24,7 @@ export default function Home() {
       <div className={`${styles.boxWidth}`}> */}
 
       {/* <Heading/> */}
-      <Features/>
+      {/* <Features/> */}
       <Video1/>
       <Showcase/>
       {/* <Video2/> */}
