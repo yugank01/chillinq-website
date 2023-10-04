@@ -23,11 +23,11 @@ const Navbar = () => {
           <a className="mr-5 hover:text-gray-900">Litepaper</a>
           <a className="mr-5 hover:text-gray-900">Blog</a>
         </nav>
-        <button className="inline-flex items-center bg-transparent border border-[#C63252] text-white py-1 px-6 rounded-xl">
+        <button className="flex items-center bg-transparent border border-[#C63252] text-white py-1 px-6 rounded-xl">
           <img src="/playstore.svg" alt="" className="mr-2" />
           Google Play
         </button>
-        <button className="inline-flex items-center ml-2 bg-transparent border border-[#C63252] text-white py-1 px-6 rounded-xl">
+        <button className="flex items-center ml-2 bg-transparent border border-[#C63252] text-white py-1 px-6 rounded-xl">
           <img src="/apple.svg" alt="" className="mr-2" />
           App Store
         </button>

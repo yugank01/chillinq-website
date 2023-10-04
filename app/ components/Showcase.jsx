@@ -21,9 +21,9 @@ const Showcase = () => {
     
   return (
     <div>
-      <div className='container mx-auto p-4'> 
-          <Image className="mx-auto mb-4" src="/chillinq2.png" height="250" width="300"></Image>
-          <p className="text-center mx-auto w-60 sm:w-80 md:w-96 lg:w-2/5 text-gray-100 text-2xl">
+      <div className='container flex flex-col items-center p-0 md:p-4'> 
+          <Image className="mx-auto mb-4" src="/chillinq2.png" height="200" width="250"></Image>
+          <p className="text-center w-60 sm:w-80 md:w-96 lg:w-2/5 text-gray-100 text-2xl">
           App for iOS and Android Users
           <br />
           Solving problems plaquing the Online Social Space          </p>
@@ -50,14 +50,14 @@ const Showcase = () => {
     </Carousel>
 
     <div className="flex items-center justify-center space-x-16">
-  <button className="inline-flex items-center bg-[#272628] border border-[#AFA9A9] text-white py-2 px-6 rounded-lg">
+  <button className="flex items-center shrink-0 bg-[#272628] border border-[#AFA9A9] text-[0.5rem] md:text-[1.25rem] text-white py-2 px-1 md:px-6 rounded-xl">
     Download Now
-    <img src="/play.png" alt="" className="ml-4" />
+    <img src="/play.png" alt="" className="ml-2 h-[20px] md:h-[36px]" />
 
   </button>
-  <button className="inline-flex items-center bg-[#272628] border border-[#AFA9A9] text-white py-1 px-6 rounded-xl">
+  <button className="inline-flex items-center shrink-0 bg-[#272628] border border-[#AFA9A9] text-[0.5rem] md:text-[1.25rem] text-white py-1 px-1 md:px-6 rounded-xl">
     Download Now
-    <img src="/app.png" alt="" className="ml-2" />
+    <img src="/app.png" alt="" className="ml-2 h-[25px] md:h-[46px]" />
 
   </button>
 </div>
