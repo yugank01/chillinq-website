@@ -42,7 +42,7 @@ const Features = () =>  (
 
 <section className={`${layout.section} mb-24`}>
     
-<div className={`${layout.sectionInfo} mx-8 sm:mx-24`}>
+<div className={`${layout.sectionInfo} mx-4 sm:mx-24`}>
 
   <h2 className={`${styles.heading2} text-5xl`}>
     A revolutionary <br className="block" /> dating and <br className="block" /> networking app
