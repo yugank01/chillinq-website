@@ -31,7 +31,7 @@ export default function Home() {
       <Trailer/>
       {/* <Heading2/> */}
       <Social/>
-      <Slider/>
+      {/* <Slider/> */}
       <Social2/>
       <FaqSection/>
       <Footer/>
