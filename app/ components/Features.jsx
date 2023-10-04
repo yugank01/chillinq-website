@@ -45,7 +45,7 @@ const Features = () =>  (
 <div className={`${layout.sectionInfo} mx-8 sm:mx-24`}>
 
   <h2 className={`${styles.heading2} text-5xl`}>
-    A revolutionary <br className="sm:block hidden" /> dating and <br className="sm:block hidden" /> networking app
+    A revolutionary <br className="block" /> dating and <br className="block" /> networking app
   </h2>
   <p className={`${styles.paragraph} text-white max-w-[470px] mt-5`}>
   Chillinq is committed to making the online dating and networking
