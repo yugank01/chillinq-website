@@ -30,9 +30,9 @@ export default function Home() {
       {/* <Video2/> */}
       <Trailer/>
       {/* <Heading2/> */}
-      {/* <Social/>
+      <Social/>
       <Slider/>
-      <Social2/> */}
+      <Social2/>
       <FaqSection/>
       <Footer/>
       {/* </div>
