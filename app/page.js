@@ -34,7 +34,7 @@ export default function Home() {
       <Slider/>
       <Social2/>
       {/* <FaqSection/> */}
-      <Footer/>
+      {/* <Footer/> */}
       {/* </div>
       </div> */}
       {/* </div> */}
