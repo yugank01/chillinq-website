@@ -32,7 +32,7 @@ export default function Home() {
       {/* <Heading2/> */}
       <Social/>
       {/* <Slider/> */}
-      {/* <Social2/> */}
+      <Social2/>
       <FaqSection/>
       <Footer/>
       {/* </div>
