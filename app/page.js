@@ -19,7 +19,7 @@ export default function Home() {
     <div className={`bg-[#020202] w-fit`}>
       {/* <div> */}
       {/* <Navbar/> */}
-      <Hero/>
+      {/* <Hero/> */}
       {/* <div className={`bg-[#020202] h-max  ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}> */}
 
