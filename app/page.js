@@ -19,17 +19,17 @@ export default function Home() {
     <div className={`bg-[#020202] w-fit`}>
       {/* <div> */}
       <Navbar/>
-      {/* <Hero/> */}
+      <Hero/>
       {/* <div className={`bg-[#020202] h-max  ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}> */}
 
-      <Heading/>
+      {/* <Heading/> */}
       <Features/>
       <Video1/>
       <Showcase/>
       {/* <Video2/> */}
       <Trailer/>
-      <Heading2/>
+      {/* <Heading2/> */}
       <Social/>
       <Slider/>
       <Social2/>
