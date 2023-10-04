@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className={`bg-[#020202] w-fit`}>
       {/* <div> */}
-      <Navbar/>
+      {/* <Navbar/> */}
       <Hero/>
       {/* <div className={`bg-[#020202] h-max  ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}> */}
