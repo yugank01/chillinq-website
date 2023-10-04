@@ -55,7 +55,7 @@ function Social2() {
   return (
     <>
     <div>
-    <div className='relative flex items-center p-48'>
+    <div className='relative flex items-center px-48 py-24'>
         <div
           ref={sliderRef}
           className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide'
