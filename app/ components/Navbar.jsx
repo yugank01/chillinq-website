@@ -9,7 +9,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="text-gray-200 body-font fixed flex items-center justify-between pl-[50px] z-10 w-full">
+    <header className="text-gray-200 bg-black/90 body-font fixed flex items-center justify-between pl-[20px] z-10 w-full">
       <a className="flex title-font font-medium items-center text-white md:mb-0">
         <Image src="/logo.png" height="30" width="120" />
 
@@ -33,7 +33,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      <div className={`delay-300 md:hidden h-screen bg-black/90 w-full fixed top-[80px] text-left container mx-auto flex flex-wrap p-5 items-center flex-col ${Toggle? 'right-[100%]':'left-[100%]}'}`}>
+      <div className={`delay-300 md:hidden h-screen bg-black/90 w-full fixed top-[66px] text-left container mx-auto flex flex-wrap p-5 items-center flex-col ${Toggle? 'right-[100%]':'left-[100%]}'}`}>
         <nav className="md:ml-auto md:mr-auto flex flex-col mb-8 flex-wrap items-center text-base justify-center">
           <a className="mr-5 mb-4 hover:text-gray-900">Home</a>
           <a className="mr-5 mb-4 hover:text-gray-900">Whitepaper</a>

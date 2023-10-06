@@ -31,7 +31,7 @@ const FaqSection = () => {
     
   return (
     <div>
-      <div className='container mx-auto p-4'> 
+      <div className='container mx-auto md:p-4'> 
           <h1 className="text-center text-white text-3xl font-extrabold mb-4 leading-tight tracking-tighter">Frequently Asked Questions</h1>
           <p className="text-center mx-auto w-60 sm:w-80 md:w-96 lg:w-2/5 text-gray-400 text-lg">
           LEARN MORE ABOUT CHILLINQ
