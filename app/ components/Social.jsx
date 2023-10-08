@@ -58,7 +58,7 @@ function Social() {
     <div className='relative flex items-center px-[5rem] sm:px-48 pt-8 pb-32'>
         <div
           ref={sliderRef}
-          className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide'
+          className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hidden'
           style={{ scrollBehavior: 'smooth' }}
         >
           {data.map((item) => (

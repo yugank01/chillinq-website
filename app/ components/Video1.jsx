@@ -1,10 +1,26 @@
-import React from "react";
+"use client"
+import React, { useState, useEffect } from 'react';
+// import Typewriter from "typewriter-effect";
+import Typical from 'react-typical';
 
 export default function Video1() {
   return (
     <div className="flex justify-center items-center flex-col bg-gradient-to-b from-[#16141B] via-[#4E3C84] to-[#020202]">
-      <h1 className="text-white font-poppins text-[1.5rem] md:text-[2.5rem] font-extrabold my-12">
-        Are you ready to <span className="text-pink-500">Chill</span>
+      <h1 className="flex text-white font-poppins text-[1.5rem] md:text-[2.5rem] font-extrabold my-12">
+        Are you ready to <span className="ml-2 text-pink-500">
+          <Typical
+            loop={Infinity}
+            wrapper='b'
+            steps={[
+              'Chill?',
+              1000,
+              'Party?',
+              1000,
+              'Date?',
+              1000
+            ]}
+          />
+        </span>
       </h1>
       {/* <div className="flex justify-center items-center">
         <img src="/videobg.svg" alt="" className="h-[80%] w-[80%]" />

@@ -16,7 +16,7 @@ const Footer = () => {
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
 
     <a className="flex title-font font-medium items-center text-white md:mb-0">
-         <Image src="/logo.png" height="30" width="120"/>
+         <Image src="/logo.png" height="30" width="120" className='hidden sm:flex'/>
 
          <span class="ml-3 text-xl bg-[#020202]"></span>
 
@@ -135,7 +135,7 @@ const Footer = () => {
 <div className="flex justify-center items-center h-[80px]">
 
 
-<p className="font-normal text-[14px] text-white opacity-50">
+<p className="font-normal text-center text-[14px] text-white opacity-50">
 © 2023 Chillinq. All rights reserved. Developed by Tygar Decentralized.          </p>
 </div>
     </div>
