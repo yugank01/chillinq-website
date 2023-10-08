@@ -55,32 +55,34 @@ function Hero() {
   }, [currentIndex]);
 
   return (
-    <div className="max-w-[2700px]  h-[180px] sm:h-[350px] lg:h-[595px] xl:h-[780px] w-full relative group">
-      <div
-        style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
-      ></div>
-      {/* Left Arrow */}
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-        <BsChevronCompactLeft onClick={prevSlide} size={30} />
-      </div>
-      {/* Right Arrow */}
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-        <BsChevronCompactRight onClick={nextSlide} size={30} />
-      </div>
-      <div className="flex top-4 justify-center py-2">
-        {slides.map((slide, slideIndex) => (
-          <div
-            key={slideIndex}
-            onClick={() => goToSlide(slideIndex)}
-            className={`text-2xl cursor-pointer ${
-              slideIndex === currentIndex ? "text-blue-500" : "text-gray-500"
-            }`}
-          >
-            <RxDotFilled />
-          </div>
-        ))}
-      </div>
+    <div className="w-full h-auto">
+     <div className="h-[180px] sm:h-[350px] lg:h-[595px] xl:h-[780px] 2xl:h-[865px] relative group">
+       <div
+         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+         className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
+       ></div>
+       {/* Left Arrow */}
+       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+         <BsChevronCompactLeft onClick={prevSlide} size={30} />
+       </div>
+       {/* Right Arrow */}
+       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+         <BsChevronCompactRight onClick={nextSlide} size={30} />
+       </div>
+       <div className="flex top-4 justify-center py-2">
+         {slides.map((slide, slideIndex) => (
+           <div
+             key={slideIndex}
+             onClick={() => goToSlide(slideIndex)}
+             className={`text-2xl cursor-pointer ${
+               slideIndex === currentIndex ? "text-blue-500" : "text-gray-500"
+             }`}
+           >
+             <RxDotFilled />
+           </div>
+         ))}
+       </div>
+     </div>
     </div>
   );
 }
