@@ -1,25 +1,21 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 // import Typewriter from "typewriter-effect";
-import Typical from 'react-typical';
+// import Typical from 'react-typical';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 export default function Video1() {
+  const [typeEffect] = useTypewriter({
+    words: ['Chill?', 'Party?', 'Date?'],
+    loop:{},
+    typeSpeed: 100,
+    deleteSpeed: 40
+  })
   return (
     <div className="flex justify-center items-center flex-col bg-gradient-to-b from-[#16141B] via-[#4E3C84] to-[#020202]">
       <h1 className="flex text-white font-poppins text-[1.5rem] md:text-[2.5rem] font-extrabold my-12">
         Are you ready to <span className="ml-2 text-pink-500">
-          <Typical
-            loop={Infinity}
-            wrapper='b'
-            steps={[
-              'Chill?',
-              1000,
-              'Party?',
-              1000,
-              'Date?',
-              1000
-            ]}
-          />
+          {typeEffect}
         </span>
       </h1>
       {/* <div className="flex justify-center items-center">
