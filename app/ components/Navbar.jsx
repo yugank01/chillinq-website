@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 const Navbar = () => {
   const [Toggle, setToggle] = useState(true);
@@ -7,9 +7,24 @@ const Navbar = () => {
   const handleClick = () => {
     setToggle(!Toggle);
   };
+  
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    });
+  }, []);
+  const navbarBgColor = scrolling ? 'bg-black/80' : 'bg-transparent';
+
 
   return (
-    <header className="text-gray-200 bg-black/80 body-font fixed flex items-center justify-between pl-[20px] z-10 w-full">
+    <header className={`text-gray-200 body-font fixed flex items-center justify-between pl-[20px] z-10 w-full 
+    ${navbarBgColor} transition-all ease-in-out duration-300`}>
       <a className="flex title-font font-medium items-center text-white md:mb-0">
         <Image src="/logo.png" height="30" width="120" />
 

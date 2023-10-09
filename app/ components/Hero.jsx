@@ -18,10 +18,10 @@ function Hero() {
       url: "/slide4.svg",
     },
     {
-      url: "/slide5.svg",
+      url: "/slide5.png",
     },
     {
-      url: "/slide6.svg",
+      url: "/slide6.png",
     },
   ];
 

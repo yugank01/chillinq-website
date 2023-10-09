@@ -41,8 +41,11 @@ const FeatureCard = ({ icon, title, content, index }) => (
 const Features = () =>  (
 
 <section className={`${layout.section} mb-24`}>
+<div>
+    <div className="grad1 absolute overflow-hidden blur-[50px] h-[750px] w-[200px]"></div>
+  </div>
     
-<div className={`${layout.sectionInfo} mx-4 sm:mx-24`}>
+<div className={`${layout.sectionInfo} z-2 relative ml-4 sm:ml-24`}>
 
   <h2 className={`${styles.heading2} text-[2rem] sm:text-5xl`}>
     A revolutionary <br className="block" /> dating and <br className="block" /> networking app
@@ -60,7 +63,7 @@ experience as smooth and enjoyable as possible.
 {/* <div className={layout.sectionImg}>
 </div> */}
  <div className={`${layout.sectionImg} flex-col`}>
-    <img src="/loop.svg" alt="loop" className="w-[75%] h-[75%]"/>
+    <img src="/loop.svg" alt="loop" className="w-[95%] h-[95%]"/>
     </div>
 </section>
 );
