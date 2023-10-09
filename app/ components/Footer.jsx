@@ -96,7 +96,7 @@ const Footer = () => {
   </div>
   <div class="py-8 bg-gradient-to-br from-[#2C59CE] via-[#6938D1] via-[#D13FCB] to-[#C93659]">
     <div class="container mx-auto py-2 px-5 flex flex-wrap flex-col sm:flex-row">
-      <h1 class="text-white text-2xl text-center sm:text-left font-semibold">Don’t Miss out
+      <h1 class="text-white text-2xl sm:text-5xl text-center sm:text-left font-semibold">Don’t Miss out
       </h1>
       
 

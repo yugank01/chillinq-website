@@ -14,7 +14,7 @@ import Social from "./ components/Social";
 import Slider from "./ components/Slider";
 import Social2 from "./ components/Social2";
 import Heading2 from "./ components/Heading2"
-import Text from "./ components/Text";
+// import Text from "./ components/Text";
 export default function Home() {
   return (
     <div className={`bg-[#020202] w-fit`}>
@@ -35,7 +35,7 @@ export default function Home() {
       <Slider/>
       <Social2/>
       <FaqSection/>
-      <Text/>
+      {/* <Text/> */}
       <Footer/>
       {/* </div>
       </div> */}

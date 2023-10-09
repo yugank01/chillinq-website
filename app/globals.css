@@ -38,8 +38,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  
 }
 
 /* .wrapper::before {
@@ -73,7 +71,7 @@
   /* left: 1.61803vw; */
   padding: 0;
   margin: 0;
-  font-family: 'Fira Mono', monospace;
+  font-family: var(--font-bungee);
   /* font-size: var(--text-size); */
   font-weight: 600;
   letter-spacing: 0.333ch;
@@ -82,9 +80,30 @@
   -webkit-background-clip: text;
   color: transparent;
     opacity: 0.4; 
-
-  
 }
+
+/* .content {
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+  180deg,
+  rgb(82.04, 179.56, 80.05) 0%,
+  rgb(228.44, 214.64, 90.42) 30.73%,
+  rgb(49.37, 179.74, 188.06) 48.96%,
+  rgb(53.98, 93.01, 193.37) 66.15%,
+  rgb(215.49, 148.42, 239.06) 82.81%,
+  rgb(178.5, 46.11, 46.11) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text !important;
+  color: transparent;
+  letter-spacing: 0.60ch;
+  opacity: 0.4;
+  position: relative;
+  text-align: center;
+  text-fill-color: transparent;
+  white-space: nowrap;
+  } */
+  
 
 /* These are non-standard but well-supported so best to use with `@supports` (if you really want to use them) */
 @supports (text-stroke: 0.1em transparent) {
@@ -111,6 +130,7 @@
 .vid-bg {
   background-image: url('/videobg.svg');
   width: 85%;
+  background-repeat: no-repeat;
 }
 
 .cuboid-container {
@@ -178,3 +198,17 @@
 .grad1 {
   background-image: radial-gradient(#2954A3,#0F103F, #000000);
 }
+
+.variant-8 {
+  background: linear-gradient(
+  180deg,
+  rgb(101, 169, 30) 3.65%,
+  rgb(193, 178, 40) 19.79%,
+  rgb(61, 215, 225) 33.85%,
+  rgb(105, 56, 209) 47.92%,
+  rgb(44, 89, 206) 60.94%,
+  rgb(209, 63, 203) 73.96%,
+  rgb(201, 54, 89) 87.5%,
+  rgb(74.08, 149.47, 14.23) 100%
+  );
+  }

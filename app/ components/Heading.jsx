@@ -6,7 +6,7 @@ const Heading = () => {
       <div className="content text-[3rem] md:text-[7.5rem] lg:text-[10rem]">
         FEATURES
       </div>
-      <div className='absolute text-white font-semibold text-center text-[2rem] md:text-[5rem]'>
+      <div className='absolute text-white tracking-widest font-poppins font-semibold text-center text-[2rem] md:text-[5rem]'>
         FEATURES
       </div>
     </div>

@@ -42,7 +42,7 @@ const Features = () =>  (
 
 <section className={`${layout.section} mb-24`}>
 <div>
-    <div className="grad1 absolute overflow-hidden blur-[50px] h-[750px] w-[465px]"></div>
+    <div className="grad1 absolute overflow-hidden blur-[50px] h-[750px] w-[35%]"></div>
   </div>
     
 <div className={`${layout.sectionInfo} z-2 relative ml-4 sm:ml-24`}>

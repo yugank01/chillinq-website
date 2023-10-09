@@ -20,10 +20,10 @@ const Showcase = () => {
       }, []);
     
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center mb-6'>
       <div className='container flex flex-col items-center pb-8 p-0 md:p-4'> 
           <Image className="mx-auto mb-4" src="/chillinq2.png" height="200" width="250"></Image>
-          <p className="text-center w-60 sm:w-80 md:w-96 lg:w-2/5 text-gray-100 text-xl sm:text-2xl">
+          <p className="text-center w-60 sm:w-80 md:w-96 lg:w-2/5 text-gray-100 text-sm sm:text-xl sm:text-2xl">
           App for iOS and Android Users
           <br />
           Solving problems plaquing the Online Social Space          </p>
