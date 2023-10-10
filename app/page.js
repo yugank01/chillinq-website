@@ -14,7 +14,8 @@ import Social from "./ components/Social";
 import Slider from "./ components/Slider";
 import Social2 from "./ components/Social2";
 import Heading2 from "./ components/Heading2"
-import Text from "./ components/Text";
+import Twitter from "./ components/Twitter";
+// import Text from "./ components/Text";
 export default function Home() {
   return (
     <div className={`bg-[#020202] w-fit`}>
@@ -31,11 +32,13 @@ export default function Home() {
       {/* <Video2/> */}
       <Trailer/>
       <Heading2/>
-      <Social/>
+      {/* <Social/>
       <Slider/>
-      <Social2/>
+      <Social2/> */}
+      <Twitter/>
       <FaqSection/>
-      <Text/>
+      
+      {/* <Text/> */}
       <Footer/>
       {/* </div>
       </div> */}

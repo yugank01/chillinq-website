@@ -26,7 +26,7 @@ export const features = [
   ];
 
 const FeatureCard = ({ icon, title, content, index }) => (
-  <div className={`flex flex-row p-2 my-4 border z-2 border-indigo-950 hover:border-pink-500 border-solid rounded-[10px] w-3/4 feature-card`}>
+  <div className={`flex flex-row p-2 my-4 border z-2 border-gray-500 hover:border-pink-500 border-solid rounded-[10px] w-3/4 feature-card`}>
     <div className={`w-[40px] h-[40px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
       <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
     </div>
@@ -42,7 +42,7 @@ const Features = () =>  (
 
 <section className={`${layout.section} mb-24`}>
 <div>
-    <div className="grad1 absolute overflow-hidden blur-[50px] h-[750px] w-[200px]"></div>
+    <div className="grad1 absolute overflow-hidden blur-[50px] h-[750px] w-[465px]"></div>
   </div>
     
 <div className={`${layout.sectionInfo} z-2 relative ml-4 sm:ml-24`}>

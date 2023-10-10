@@ -66,17 +66,18 @@
 }
 
 .content {
-  --text-size: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+  /* --text-size: clamp(3.05rem, 3.54vw + 2.17rem, 5rem); */
   position: relative;
   /* The + symbol takes up less space even though it's monospace. This helps it look more balanced.
   Btw: did you notice I love the golden ratio! */
   /* left: 1.61803vw; */
   padding: 0;
   margin: 0;
-  font-family: 'Fira Mono', monospace;
+  font-family: var(--font-bungee);
   /* font-size: var(--text-size); */
-  font-weight: 600;
+  /* font-weight: 600; */
   letter-spacing: 0.333ch;
+  /* background-color: wheat; */
   background-image: linear-gradient(to right, red, orange,yellow,green,blue,purple);
   background-clip: text;
   -webkit-background-clip: text;
@@ -91,15 +92,15 @@
   .content {
     /* I could have used `@supports not` but isn't supported by all browsers... So we're overriding color + font-weight here for best support */
     color: initial;
-    font-weight: 500;
-    text-stroke: 0.1em transparent
+    /* font-weight: 500; */
+    /* text-stroke: 0.1em transparent */
   }
 }
 
 @supports (-webkit-text-stroke: 0.1em transparent) {
   .content {
     color: initial;
-    font-weight: 500;
+    /* font-weight: 500; */
     -webkit-text-stroke: 0.1em transparent
   }
 }
@@ -178,3 +179,4 @@
 .grad1 {
   background-image: radial-gradient(#2954A3,#0F103F, #000000);
 }
+
