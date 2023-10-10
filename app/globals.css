@@ -2,15 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 .gradient-01 {
   position: absolute;
   left: -112px;
   top: 1271.73px;
   width: 276px;
   height: 1331.27px;
-  background: linear-gradient(60%, #2954A3 100%, #0F103F 100%);
+  background: linear-gradient(60%, #2954a3 100%, #0f103f 100%);
   filter: blur(250px);
 }
 
@@ -20,16 +18,16 @@
   top: 1321.49px;
   width: 299px;
   height: 1269.06px;
-  background: linear-gradient(60deg, #2D0745);
+  background: linear-gradient(60deg, #2d0745);
   filter: blur(250px);
 }
 
-.gradient-03{
+.gradient-03 {
   position: absolute;
-    width: 330px;
-    height: 850.06px;
-    background: #2D0745;
-    filter: blur(250px);
+  width: 330px;
+  height: 850.06px;
+  background: #2d0745;
+  filter: blur(250px);
 }
 
 .wrapper {
@@ -75,11 +73,19 @@
   /* font-size: var(--text-size); */
   font-weight: 600;
   letter-spacing: 0.333ch;
-  background-image: linear-gradient(to right, red, orange,yellow,green,blue,purple);
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    purple
+  );
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-    opacity: 0.4; 
+  opacity: 0.4;
 }
 
 /* .content {
@@ -103,7 +109,6 @@
   text-fill-color: transparent;
   white-space: nowrap;
   } */
-  
 
 /* These are non-standard but well-supported so best to use with `@supports` (if you really want to use them) */
 @supports (text-stroke: 0.1em transparent) {
@@ -111,7 +116,7 @@
     /* I could have used `@supports not` but isn't supported by all browsers... So we're overriding color + font-weight here for best support */
     color: initial;
     font-weight: 500;
-    text-stroke: 0.1em transparent
+    text-stroke: 0.1em transparent;
   }
 }
 
@@ -119,7 +124,7 @@
   .content {
     color: initial;
     font-weight: 500;
-    -webkit-text-stroke: 0.1em transparent
+    -webkit-text-stroke: 0.1em transparent;
   }
 }
 
@@ -128,7 +133,7 @@
 } */
 
 .vid-bg {
-  background-image: url('/videobg.svg');
+  background-image: url("/videobg.svg");
   width: 85%;
   background-repeat: no-repeat;
 }
@@ -196,19 +201,51 @@
 }
 
 .grad1 {
-  background-image: radial-gradient(#2954A3,#0F103F, #000000);
+  background-image: radial-gradient(#2954a3, #0f103f, #000000);
 }
 
 .variant-8 {
   background: linear-gradient(
-  180deg,
-  rgb(101, 169, 30) 3.65%,
-  rgb(193, 178, 40) 19.79%,
-  rgb(61, 215, 225) 33.85%,
-  rgb(105, 56, 209) 47.92%,
-  rgb(44, 89, 206) 60.94%,
-  rgb(209, 63, 203) 73.96%,
-  rgb(201, 54, 89) 87.5%,
-  rgb(74.08, 149.47, 14.23) 100%
+    180deg,
+    rgb(101, 169, 30) 3.65%,
+    rgb(193, 178, 40) 19.79%,
+    rgb(61, 215, 225) 33.85%,
+    rgb(105, 56, 209) 47.92%,
+    rgb(44, 89, 206) 60.94%,
+    rgb(209, 63, 203) 73.96%,
+    rgb(201, 54, 89) 87.5%,
+    rgb(74.08, 149.47, 14.23) 100%
   );
+}
+
+.use-slider {
+  display: flex;
+  /* align-items: center; */
+  overflow: hidden;
+  user-select: none;
+}
+
+.use-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  flex-shrink: 0;
+  min-width: 100%;
+  animation: scroll 300s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateZ(0);
   }
+  100% {
+    transform: translate3d(-73%, 0, 0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .use-slide {
+    gap: 1.5rem;
+  }
+}
