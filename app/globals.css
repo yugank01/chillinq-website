@@ -250,3 +250,28 @@
   }
 }
 
+.features{
+  font-family: var(--font-bungee);
+  letter-spacing: 0.60ch; 
+}
+
+.navba-list{
+  position: relative;
+  margin-left: 3.5rem;
+}
+
+.navba-list::before{
+  content: "";
+  position: absolute;
+  background-color: #DB1F48;
+  height: 3px;
+  border-radius: 5px;
+  width: 0;
+  left: 0;
+  top: 25px;
+  transition: width 0.3s ease-in-out;
+}
+
+.navba-list:hover::before{
+  width: 100%;
+}

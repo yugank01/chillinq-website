@@ -14,8 +14,8 @@ export default function Video1() {
   return (
     <div className="flex justify-center items-center flex-col bg-gradient-to-b from-[#16141B] via-[#4E3C84] to-[#020202]">
       <h1 className="flex text-white font-poppins text-[1.5rem] md:text-[2.5rem] font-extrabold my-12">
-        Are you ready to <span className="ml-2 text-pink-500">
-          {/* {typeEffect} */}
+        Are you ready to <span className="ml-2 bg-clip-text text-transparent bg-gradient-to-b from-[#d51fdb] to-[#DB1F48]">
+          {typeEffect}
           
         </span>
       </h1>

@@ -95,12 +95,9 @@ const Footer = () => {
     </div>
   </div>
   <div class="py-8 bg-gradient-to-br from-[#2C59CE] via-[#6938D1] via-[#D13FCB] to-[#C93659]">
-    <div class="container mx-auto py-2 px-5 flex flex-wrap flex-col sm:flex-row">
-      <h1 class="text-white text-2xl sm:text-5xl text-center sm:text-left font-semibold">Don’t Miss out
-      </h1>
-      
-
-      
+    <div className='flex flex-col mx-16 justify-start'>
+      <div class="container py-2 flex flex-wrap flex-col sm:flex-row">
+      <h1 class="text-white text-2xl sm:text-5xl text-center sm:text-left font-semibold">Don’t Miss out</h1>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
         <a class="text-white">
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
@@ -124,11 +121,14 @@ const Footer = () => {
             <circle cx="4" cy="4" r="2" stroke="none"></circle>
           </svg>
         </a>
+        <a class="ml-3 text-white">
+          <img src="/medium.svg" className='w-5 h-5' alt="" />
+          
+        </a>
       </span>
-      
+      </div>
+      <p class="text-white text-md text-center sm:text-left">NFTs that look like you</p>
     </div>
-    <p class="text-white text-md text-center sm:text-left ml-10 px-[60px]">NFTs that look like you
-</p>
   </div>
  
 </footer> 

@@ -33,10 +33,10 @@ const Navbar = () => {
       
       <div className="container mx-auto hidden md:flex flex-wrap p-5 flex-row items-center">
         <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-          <a className="mr-5 hover:text-gray-900">Home</a>
-          <a className="mr-5 hover:text-gray-900">Whitepaper</a>
-          <a className="mr-5 hover:text-gray-900">Litepaper</a>
-          <a className="mr-5 hover:text-gray-900">Blog</a>
+          <a className="navba-list mr-5 hover:text-gray-900">Home</a>
+          <a className="navba-list mr-5 hover:text-gray-900">Whitepaper</a>
+          <a className="navba-list mr-5 hover:text-gray-900">Litepaper</a>
+          <a className="navba-list mr-5 hover:text-gray-900">Blog</a>
         </nav>
         <button className="flex items-center bg-transparent border border-[#C63252] text-white py-1 px-6 rounded-xl">
           <img src="/playstore.svg" alt="" className="mr-2" />

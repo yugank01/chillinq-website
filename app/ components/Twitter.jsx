@@ -3,7 +3,12 @@ import { Tweet } from 'react-tweet'
 
 const Twitter = () => {
   return (
-    <div>
+    <div className='hidden sm:flex flex-col'>
+      <div className='h-[80vh] flex flex-col relative justify-center items-center w-full'>
+      <h1 className='relative opacity-40 features bg-clip-text text-transparent text-center bg-gradient-to-r from-[#52B450] via-[#E4D75A] to-[#31B4BC] via-[#365DC1] to-[#D794EF] to-[#B22E2E] text-[4rem] md:text-[8rem] lg:text-[10rem]'>SOCIAL</h1>  
+      <div className='absolute text-white tracking-widest font-semibold text-center text-[2rem] md:text-[5rem]'>SOCIAL MEDIA
+     </div>
+    </div>
       <div className="App px-4 mx-4 sm:mx-12 grid grid-cols-1" data-theme="light" >
         {/* <Tweet id="1659273134879514624" /> */}
         {/* <Tweet id="1679751466477838342" />
