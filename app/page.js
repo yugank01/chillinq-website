@@ -8,12 +8,9 @@ import Navbar from "./ components/Navbar";
 import styles from "@/style";
 import Showcase from "./ components/Showcase";
 import Video1 from "./ components/Video1";
-import Video2 from "./ components/Video2";
 import Trailer from "./ components/Trailer";
-import Social from "./ components/Social";
-import Slider from "./ components/Slider";
-import Social2 from "./ components/Social2";
 import Heading2 from "./ components/Heading2"
+import Twitter from "./ components/Twitter";
 // import Text from "./ components/Text";
 export default function Home() {
   return (
@@ -31,9 +28,7 @@ export default function Home() {
       {/* <Video2/> */}
       <Trailer/>
       <Heading2/>
-      <Social/>
-      <Slider/>
-      <Social2/>
+      <Twitter/>
       <FaqSection/>
       {/* <Text/> */}
       <Footer/>
